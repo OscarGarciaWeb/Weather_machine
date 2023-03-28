@@ -1,13 +1,9 @@
 <template>
   <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
+    <i><slot name="icon"></slot></i>
     <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+      <h3><slot name="heading"></slot></h3>
+      <slot name="info"> </slot>
     </div>
   </div>
 </template>
@@ -51,7 +47,7 @@ h3 {
     left: -26px;
     position: absolute;
     border: 1px solid var(--color-border);
-    background: var(--color-background);
+    color: var(--color-border);
     border-radius: 8px;
     width: 50px;
     height: 50px;
